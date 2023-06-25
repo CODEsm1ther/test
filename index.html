@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(pic.jpg);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            font-family: 'Belanosima', sans-serif;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 24px;
+            top: 24px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 114px;
+            filter: invert();
+
+        }
+
+        .left div {
+            text-align: center;
+            font-size: large;
+            color: white;
+        }
+
+        .mid {
+            /* border: 2px solid red; */
+            display: block;
+            width: 46%;
+            margin: 10px auto;
+            position: relative;
+            top: 3px;
+            background-color: black;
+            border-radius: 10px;
+            /* position: ; */
+        }
+
+        .right {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 26px;
+            right: 21px;
+        }
+
+        /* .navbar {
+            
+
+        } */
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 28px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: grey;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            margin: 0px 0px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 1s;
+            font-family: 'Belanosima', sans-serif;
+        }
+
+        .button:hover {
+            background-color: grey;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            margin: 124px 95px;
+            padding: 40px 62px;
+            border-radius: 10px;
+            width: 900px;
+            position: relative;
+            top: -57px;
+            left: 43px;
+        }
+
+        .formgrp input {
+            text-align: center;
+            display: block;
+            width: 359px;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 13px auto;
+            border-radius: 10px;
+
+        }
+
+        #id {
+            display: block;
+            width: 33%;
+            margin: 30px auto;
+        }
+
+        #final {
+            /* border: 2px solid red; */
+            position: relative;
+            width: 85px;
+            left: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="left"><img src="cumb.png" alt="">
+                <div>Planet fitness</div>
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="button">Email</button>
+                <button class="button">Addresses</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 style="text-align: center; color: white;">Join the planet fitness today</h1>
+            <form action="">
+                <div class="formgrp"><input type="texttext" name="" placeholder="Enter your name here"></div>
+                <div class="formgrp"><input type="texttext" name="" placeholder="Enter your contact nohere"></div>
+                <div class="formgrp"><input type="texttext" name="" placeholder="Enter your membersip here"></div>
+                <div class="formgrp"><input type="texttext" name="" placeholder="Enter your address" class="formgrp">
+                </div>
+                <div id="final"><button class="button" id="subt" style="width: 500px;">Submit</button></div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
